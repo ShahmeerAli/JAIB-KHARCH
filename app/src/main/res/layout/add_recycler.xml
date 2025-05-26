@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_4"
+        android:outlineSpotShadowColor="@color/StrokeColors"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/dp_20"
+        app:cardElevation="@dimen/dp_30"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0"
+        app:strokeColor="@color/StrokeColors"
+        android:clipToOutline="true"
+
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/dp_10"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/recyclertxtCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:fontFamily="@font/latobold"
+                android:text="Category"
+                android:textColor="@color/HistoryHeading"
+                android:textSize="@dimen/sp_16"
+
+                />
+
+            <TextView
+                android:id="@+id/recyclertxtSpending"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/dp_10"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:text="  + spending"
+                android:textColor="@color/Moneycountercolor"
+                android:textSize="@dimen/sp_12" />
+
+
+            <TextView
+                android:id="@+id/recyclerdateTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:text="date"
+                android:textColor="@color/MainHeadingcolor"
+                android:fontFamily="@font/latobold"
+                android:textSize="@dimen/sp_10"
+                />
+
+
+
+        </LinearLayout>
+
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

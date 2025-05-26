@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="@dimen/dp_420"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:cardElevation="@dimen/dp_10"
+        app:cardCornerRadius="@dimen/dp_20"
+        app:cardBackgroundColor="@color/white"
+        android:layout_marginHorizontal="@dimen/dp_20"
+        app:strokeColor="@color/MainHeadingcolor"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="1"
+            android:padding="@dimen/dp_20"
+            android:orientation="vertical"
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Category"
+                android:textSize="@dimen/sp_16"
+                android:padding="@dimen/dp_16"
+                android:textColor="@color/Subheadingcolor"
+                />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_48"
+                android:id="@+id/spinnercategory"
+                android:padding="@dimen/dp_10"
+
+                />
+
+
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_58"
+                android:hint="Money Spent"
+                android:textColorHint="@color/StrokeColors"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_8"
+                android:inputType="number"
+                android:id="@+id/edmoneyspent"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_58"
+                android:hint="Date(dd/mm/yyyy)"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_8"
+                android:clickable="true"
+                android:inputType="none"
+                android:focusable="false"
+                android:id="@+id/eddate"
+                />
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/okBt"
+                android:text="OK"
+                android:textColor="@color/white"
+                android:fontFamily="@font/latobold"
+                android:textSize="@dimen/sp_16"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/ButtonColor"
+                app:rippleColor="@color/ripplecolor"
+                />
+        </LinearLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

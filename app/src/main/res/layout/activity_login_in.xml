@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginIn">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/splashscreen"
+        android:scaleType="fitXY"
+        android:id="@+id/imageLoginScreen"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        />
+
+    <TextView
+        android:id="@+id/textView2welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bebasregular"
+        android:text="Welcome"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.1"
+        android:textColor="@color/MainHeadingcolor"
+        android:textSize="@dimen/sp_42"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardviewloginscreen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dp_10"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/dp_20"
+        app:cardElevation="@dimen/dp_10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2welcome">
+
+        <LinearLayout
+            android:id="@+id/linearlayoutloginscreen"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/dp_10"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Login to Continue"
+                android:textColor="@color/Subheadingcolor"
+                android:textSize="@dimen/sp_26"
+                android:fontFamily="@font/bebasregular"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp_10"
+                android:padding="@dimen/dp_10"
+                />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp_10"
+                android:hint="  Email"
+                android:padding="@dimen/dp_10"
+                app:endIconMode="clear_text"
+                app:helperText="*Required"
+                app:helperTextEnabled="true"
+                app:helperTextTextColor="@color/HelperColors"
+                app:startIconDrawable="@drawable/email_svgrepo_com"
+                app:startIconTint="@color/StrokeColors"
+                app:boxStrokeColor="@color/StrokeColors"
+
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:textColor="@color/HelperColors"
+                    android:textSize="@dimen/dp_16"
+                    android:id="@+id/EmailLoginScreen"
+
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:boxStrokeColor="@color/StrokeColors"
+                android:hint="  Password"
+                android:padding="@dimen/dp_10"
+                app:endIconMode="password_toggle"
+                app:startIconTint="@color/StrokeColors"
+                app:endIconTint="@color/StrokeColors"
+                app:helperText="*Required"
+                app:helperTextEnabled="true"
+                app:helperTextTextColor="@color/HelperColors"
+                app:startIconDrawable="@drawable/password_svgrepo_com"
+
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:textColor="@color/HelperColors"
+                    android:textSize="@dimen/dp_16"
+                    android:id="@+id/PasswordLoginScreen"
+
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/LoginBt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp_10"
+                android:backgroundTint="@color/ButtonColor"
+                android:fontFamily="@font/bebasregular"
+                android:text="Login"
+                android:textSize="@dimen/dp_16"
+                android:textColor="@color/buttonbgtint"
+                app:cornerRadius="@dimen/dp_10"
+                app:rippleColor="@color/ripplecolor"
+
+                />
+
+            <TextView
+                android:id="@+id/loginscreentxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp_10"
+                android:fontFamily="@font/bebasregular"
+                android:text="New to Jaib Kharch?"
+                android:textColor="@color/Subheadingcolor"
+                android:textSize="@dimen/dp_20"
+
+
+                />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/SignUpBtLoginScreen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp_10"
+                android:backgroundTint="@color/buttonbgtint"
+                android:fontFamily="@font/bebasregular"
+                android:text="Sign up"
+                android:textColor="@color/ButtonColor"
+                android:textSize="@dimen/dp_16"
+                app:cornerRadius="@dimen/dp_10"
+                app:rippleColor="@color/ripplecolor"
+                />
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp_12"
+                android:text="Reset Password"
+                android:textColor="@color/buttonbgtint"
+                android:backgroundTint="@color/ButtonColor"
+                android:fontFamily="@font/bebasregular"
+                android:id="@+id/resetpassword"
+
+                />
+
+
+
+
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

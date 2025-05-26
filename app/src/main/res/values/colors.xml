@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="ripplecolor">#CB0A0A</color>
+    <color name="MainHeadingcolor">#C23E3E</color>
+    <color name="ButtonColor">#F24E4E</color>
+    <color name="ButtonTextColor">#FFFFFFFF</color>
+    <color name="Subheadingcolor">#F24E4E</color>
+    <color name="HelperColors">#FB7070</color>
+    <color name="welcometxt">#FFFFFFFF</color>
+    <color name="Moneycountercolor">#75EF60</color>
+    <color name="HistoryHeading">#FF000000</color>
+    <color name="buttonbgtint">#FFFFFFFF</color>
+    <color name="lighttbttxt">#f24e4e</color>
+    <color name="StrokeColors">#FF6158</color>
+    <color name="countecolor">#CB0A0A</color>
+    <color name="IconColor">#E40909</color>
+
+
+</resources>

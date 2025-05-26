@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/onboardingbg"
+    tools:context=".SignUp"
+
+    >
+
+    <TextView
+        android:id="@+id/textViewSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_100"
+        android:fontFamily="@font/bebasregular"
+        android:gravity="center"
+        android:text="Create Your\nAccount "
+        android:textColor="@color/welcometxt"
+        android:textSize="@dimen/sp_40"
+        android:layout_marginRight="@dimen/dp_200"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/white"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="0dp"
+        app:cardCornerRadius="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSignUp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+
+            <TextView
+                android:layout_marginTop="@dimen/dp_10"
+                android:padding="@dimen/dp_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Submit Your Details"
+                android:fontFamily="@font/bebasregular"
+                android:textSize="@dimen/sp_30"
+                android:layout_gravity="center"
+                android:textColor="@color/MainHeadingcolor"
+
+                />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputUsername"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp_16"
+                android:hint="  Username"
+                android:padding="@dimen/dp_12"
+                app:counterEnabled="true"
+                app:counterMaxLength="25"
+                app:counterOverflowTextColor="@color/ripplecolor"
+                app:counterTextColor="@color/countecolor"
+                app:endIconMode="clear_text"
+                app:helperText="*Required"
+                app:helperTextEnabled="true"
+                app:helperTextTextColor="@color/HelperColors"
+                app:hintTextColor="@color/StrokeColors"
+                app:startIconDrawable="@drawable/user_svgrepo_com"
+                app:startIconTint="@color/HelperColors"
+                app:hintTextAppearance="@font/bebasregular"
+                app:boxStrokeColor="@color/StrokeColors"
+
+
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/EdittextUserName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:textColor="@color/HelperColors" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="  Email"
+                app:boxStrokeColor="@color/StrokeColors"
+                android:padding="@dimen/dp_12"
+                app:endIconMode="clear_text"
+                app:helperText="*Required"
+                app:helperTextEnabled="true"
+                app:helperTextTextColor="@color/HelperColors"
+                app:startIconDrawable="@drawable/email_svgrepo_com"
+                app:hintTextAppearance="@font/bebasregular"
+                app:startIconTint="@color/HelperColors"
+
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:textColor="@color/HelperColors"
+                    android:id="@+id/signupemail"
+
+
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="  Password"
+                android:padding="@dimen/dp_12"
+                app:endIconMode="password_toggle"
+                app:helperText="*Required"
+                app:helperTextEnabled="true"
+                app:helperTextTextColor="@color/HelperColors"
+                app:hintTextAppearance="@font/bebasregular"
+                app:startIconTint="@color/HelperColors"
+                app:hintEnabled="true"
+                app:endIconTint="@color/HelperColors"
+                app:startIconDrawable="@drawable/password_svgrepo_com"
+                app:boxStrokeColor="@color/StrokeColors"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:textColor="@color/HelperColors"
+                    android:id="@+id/signuppassword"
+
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                app:cornerRadius="@dimen/dp_10"
+                android:backgroundTint="@color/ButtonColor"
+                android:text="Sign up"
+                android:textColor="@color/buttonbgtint"
+                android:fontFamily="@font/bebasregular"
+                android:textSize="@dimen/sp_16"
+                android:layout_gravity="center"
+                android:id="@+id/SignUpScreenSignUpBt"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               android:layout_gravity="center"
+                android:fontFamily="@font/bebasregular"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="Already a user?"
+                android:textColor="@color/Subheadingcolor"
+                android:textSize="@dimen/sp_20" />
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:textColor="@color/lighttbttxt"
+                app:strokeColor="@color/StrokeColors"
+                android:id="@+id/loginBtSignUpScreen"
+                android:textSize="@dimen/sp_20"
+                android:fontFamily="@font/bebasregular"
+                android:backgroundTint="@color/buttonbgtint"
+                android:layout_marginTop="@dimen/dp_20"
+                android:layout_gravity="center"
+                app:cornerRadius="10dp"
+                app:elevation="10dp"
+                app:rippleColor="@color/ripplecolor"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_30"
+                />
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

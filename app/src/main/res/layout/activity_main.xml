@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/dp_26"
+        app:cardElevation="@dimen/dp_10"
+        app:layout_constraintVertical_bias="0.98"
+        android:padding="@dimen/dp_10"
+        android:layout_marginHorizontal="@dimen/dp_10"
+        app:strokeColor="@color/StrokeColors"
+        app:strokeWidth="1dp"
+        android:outlineSpotShadowColor="@color/StrokeColors"
+        android:outlineProvider="background"
+        android:outlineAmbientShadowColor="@color/StrokeColors"
+        >
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:menu="@menu/menu_bottom_nav"
+            app:itemIconTint="@color/IconColor"
+            android:id="@+id/BottomNav"
+            app:itemTextColor="@color/ripplecolor"
+            android:backgroundTint="@color/ButtonColor"
+            app:itemBackground="@color/white"
+            app:itemRippleColor="@color/white"
+            />
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

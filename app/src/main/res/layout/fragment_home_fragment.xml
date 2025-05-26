@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".home_fragment">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_200"
+        android:scaleType="centerCrop"
+        android:src="@drawable/redsplash"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/welcometxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_60"
+        android:fontFamily="@font/latobold"
+        android:padding="@dimen/dp_4"
+        android:text="Welcome"
+        android:textColor="@color/welcometxt"
+        android:textSize="@dimen/sp_30"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardviewll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dp_4"
+        android:layout_marginTop="@dimen/dp_10"
+        android:outlineSpotShadowColor="@color/ripplecolor"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/dp_20"
+        app:cardElevation="@dimen/dp_10"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcometxt"
+        app:strokeColor="@color/white"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/cardbg"
+            android:orientation="vertical"
+            android:padding="@dimen/dp_10"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/totalspendingsTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/latobold"
+                android:padding="@dimen/dp_10"
+                android:text="Total Spendings"
+                android:textColor="@color/welcometxt"
+                android:textSize="@dimen/sp_24"
+
+                />
+
+
+            <TextView
+                android:id="@+id/totalMoneySpent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginTop="@dimen/dp_6"
+                android:padding="@dimen/dp_6"
+                android:textColor="@color/welcometxt"
+                android:textSize="@dimen/sp_26" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginBottom="@dimen/dp_6" />
+
+
+        </LinearLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <TextView
+        android:id="@+id/txtTransactions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_20"
+        android:fontFamily="@font/latobold"
+        android:text="Recent Transactions"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_20"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardviewll" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/historyanim"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_50"
+        android:layout_marginTop="@dimen/dp_8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtTransactions"
+        app:layout_constraintTop_toBottomOf="@+id/cardviewll"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/historyanim"
+
+        />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/dp_40"
+        android:clipToPadding="false"
+        android:paddingBottom="@dimen/dp_120"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTransactions"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/addBtHomeFrag"
+        android:layout_width="@dimen/dp_60"
+        android:layout_height="@dimen/dp_70"
+        android:layout_marginBottom="@dimen/dp_20"
+        android:backgroundTint="@color/ButtonColor"
+        android:clickable="true"
+        android:focusable="true"
+        app:elevation="@dimen/dp_10"
+        android:text="+"
+        android:textSize="@dimen/dp_30"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtTransactions"
+        app:layout_constraintTop_toBottomOf="@id/historyanim"
+        app:layout_constraintVertical_bias="0.8"
+        app:rippleColor="@color/ripplecolor"
+
+        />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

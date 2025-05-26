@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:enabled="true"
+        android:title="Home"
+        android:icon="@drawable/home_angle_svgrepo_com"
+        android:id="@+id/navHome"
+
+        >
+
+    </item>
+
+    <item
+        android:enabled="true"
+        android:title="Insights"
+        android:id="@+id/NavInsights"
+        android:icon="@drawable/spotistats_svgrepo_com"
+        ></item>
+    <item
+        android:enabled="true"
+        android:id="@+id/navTrans"
+        android:icon="@drawable/transaction_minus_svgrepo_com"
+        android:title="Transactions"></item>
+
+    <item
+        android:enabled="true"
+        android:title="Profile"
+        android:id="@+id/NavProfile"
+        android:icon="@drawable/profile_svgrepo_com"
+        ></item>
+
+</menu>

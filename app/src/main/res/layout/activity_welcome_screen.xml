@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WelcomeScreen"
+    android:background="@color/white"
+
+    >
+
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/imageWelcoe"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_340"
+        android:layout_marginTop="4dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/welcomescreen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardviewwelcome"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageWelcoe"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:cardCornerRadius="@dimen/dp_30"
+        app:cardBackgroundColor="@color/white"
+        >
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:weightSum="1"
+              android:padding="@dimen/dp_10"
+              android:orientation="vertical">
+              <TextView
+                  android:id="@+id/textView"
+                  android:padding="@dimen/dp_10"
+                  android:layout_marginTop="@dimen/dp_10"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:fontFamily="@font/bebasregular"
+                  android:gravity="start"
+                  android:text="Start Your Journey\nBecause \nyour wallet deserves better… or at least an explanation!"
+                  android:textColor="@color/Subheadingcolor"
+                  android:textSize="@dimen/sp_34"
+                  app:layout_constraintEnd_toEndOf="parent"
+                  app:layout_constraintStart_toStartOf="parent"
+                  app:layout_constraintTop_toBottomOf="@+id/imageWelcoe" />
+
+
+              <com.google.android.material.button.MaterialButton
+                  android:id="@+id/signupbtWelcome"
+                  android:layout_width="@dimen/dp_200"
+                  android:layout_height="@dimen/dp_58"
+                  android:backgroundTint="@color/ButtonColor"
+                  android:text="Sign Up"
+                  android:textColor="@color/buttonbgtint"
+                 android:layout_gravity="center"
+                  app:strokeColor="@color/white"
+                  android:textSize="@dimen/sp_16"
+                  app:cornerRadius="@dimen/dp_10"
+                  android:layout_marginTop="@dimen/dp_10"
+                  android:padding="@dimen/dp_10"
+                  app:rippleColor="#F4C9C9"
+                  />
+
+              <com.google.android.material.button.MaterialButton
+                  android:id="@+id/LoginbtWelcome"
+                  style="?attr/materialButtonOutlinedStyle"
+                  android:layout_width="@dimen/dp_200"
+                  app:strokeColor="@color/StrokeColors"
+                 android:layout_gravity="center"
+                  android:layout_height="@dimen/dp_58"
+                  android:backgroundTint="@color/buttonbgtint"
+                  android:text="Login"
+                  android:textSize="@dimen/sp_18"
+                  android:textColor="@color/lighttbttxt"
+                  android:padding="@dimen/dp_10"
+                  android:layout_marginTop="@dimen/dp_20"
+                  app:cornerRadius="@dimen/dp_10"
+                  app:rippleColor="@color/ripplecolor"
+                  />
+
+
+          </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
